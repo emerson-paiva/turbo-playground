@@ -1,4 +1,5 @@
-import { Button } from "ui";
+import { Button } from 'ui';
+import path from 'path';
 
 export default function Web() {
   return (
@@ -8,3 +9,5 @@ export default function Web() {
     </div>
   );
 }
+
+path.resolve('./next.config.js');
