@@ -2,20 +2,20 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
-    "prettier": "^2.5.1",
+    "prettier": "latest",
     "turbo": "latest"
   },
   "name": "turbo-playground",
   "packageManager": "npm@9.5.1",
   "workspaces": [
-    "apps/*",
+    "apps/**",
     "packages/*"
   ]
 }
